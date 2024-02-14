@@ -4,3 +4,112 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+  --wdht: 100;
+  --wght: 400;
+  --wght-header: 400;
+  --main-font: "Inter-Variable", Arial, sans-serif;
+  --accent-font: "PressStart2P-Regular", Arial, sans-serif;
+  --main-color: #000000;
+  --main-font-size: 18px;
+  --background-color: #ffffff;
+  --button-color: #ffffff;
+  --button-font-size: 14px;
+  --label-font-color: rgba(0, 0, 0, 0.6);
+  --label-stroke-color: rgba(255, 255, 255, 0.6);
+  --label-font-size: 14px;
+  --accent-color: ;
+  --hover-color: rgba(0, 0, 0, 0.6);
+  --contour-color: #000000;
+  --sparks-color: rgba(255, 0, 0, 0);
+  --heart-color: rgb(255, 0, 0);
+  --background-image: repeating-linear-gradient(
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --wdht: 100;
+    --wght: 400;
+    --wght-header: 400;
+    --main-font: "Inter-Variable", Arial, sans-serif;
+    --accent-font: "PressStart2P-Regular", Arial, sans-serif;
+    --main-color: #000000;
+    --main-font-size: 18px;
+    --background-color: #ffffff;
+    ---button-font-size: 14px;
+    --button-color: #ffffff;
+    --label-font-color: rgba(0, 0, 0, 0.6);
+    --label-stroke-color: rgba(255, 255, 255, 0.6);
+    --label-font-size: 14px;
+    --accent-color: ;
+    --hover-color: rgba(0, 0, 0, 0.6);
+    --contour-color: #000000;
+    --sparks-color: rgba(255, 0, 0, 0);
+    --heart-color: rgb(255, 0, 0);
+    --background-image: repeating-linear-gradient(
+        #d3d3d3 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+      linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  }
+}
+
+:root.theme-dark {
+  --wdht: 100;
+  --wght: 465;
+  --wght-header: 400;
+  --main-font: "Inter-Variable", Arial, sans-serif;
+  --accent-font: "PressStart2P-Regular", Arial, sans-serif;
+  --main-color: #00cc14;
+  --main-font-size: 18px;
+  --background-color: #000000;
+  --button-color: #00cc14;
+  --button-font-size: 14px;
+  --label-font-color: rgba(0, 204, 20, 0.6);
+  --label-stroke-color: rgba(0, 0, 0, 0.2);
+  --label-font-size: 14px;
+  --accent-color: ;
+  --hover-color: rgba(0, 204, 20, 0.6);
+  --contour-color: #00cc14;
+  --sparks-color: rgba(255, 0, 0, 0);
+  --heart-color: rgb(255, 0, 0);
+  --background-image: repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
+    linear-gradient(#007f0c, #004306);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --wdht: 100;
+    --wght: 465;
+    --wght-header: 400;
+    --main-font: "Inter-Variable", Arial, sans-serif;
+    --accent-font: "PressStart2P-Regular", Arial, sans-serif;
+    --main-color: #00cc14;
+    --main-font-size: 18px;
+    --background-color: #000000;
+    --button-color: #00cc14;
+    --button-font-size: 14px;
+    --label-font-color: rgba(0, 204, 20, 0.6);
+    --label-stroke-color: rgba(0, 0, 0, 0.2);
+    --label-font-size: 14px;
+    --accent-color: ;
+    --hover-color: rgba(0, 204, 20, 0.6);
+    --contour-color: #00cc14;
+    --sparks-color: rgba(255, 0, 0, 0);
+    --heart-color: rgb(255, 0, 0);
+    --background-image: repeating-linear-gradient(
+        #000 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
+      linear-gradient(#007f0c, #004306);
+  }
+}

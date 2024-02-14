@@ -12,3 +12,51 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes change-color {
+  to {
+    color: var(--hover-color);
+  }
+}
+
+@keyframes move-arrow {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(4px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes increase-heart {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  0% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fill-sparks {
+  0% {
+    fill: var(--sparks-color);
+  }
+
+  50% {
+    fill: var(--heart-color);
+  }
+
+  100% {
+    fill: var(--sparks-color);
+  }
+}
