@@ -34,8 +34,11 @@
 
 .header {
   margin: auto;
-  margin-block: 102px;
-  inline-size: 50%;
+  margin-block: 100px;
+  min-inline-size: 371px;
+  max-inline-size: 700px;
+  max-block-size: 368px;
+  min-block-size: 327px;
   border: 2px solid var(--main-color);
   display: flex;
   flex-direction: column;
@@ -52,14 +55,14 @@
 }
 
 .header-title-2 {
-  margin-block: 20px 25px;
+  margin-block: 20px 20px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 7px;
   padding-block-end: 25px;
   padding-inline-start: 15px;
 }
@@ -125,6 +128,8 @@
 }
 
 .main-content {
+  min-inline-size: 371px;
+  max-inline-size: 700px;
   margin: auto;
   inline-size: 50%;
   margin-block-start: 50px;
@@ -148,6 +153,7 @@
 
 .image-block {
   position: relative;
+  border-block: 2px solid black;
 }
 
 .label {
@@ -174,6 +180,7 @@
   block-size: 100%;
   object-fit: cover;
   object-position: center;
+  display: block;
 }
 
 .card-description-block {
@@ -402,13 +409,17 @@
   backdrop-filter: brightness(20%);
 }
 
-.dialog-title {
+.dialog-article {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 20px;
   line-height: 21px;
+}
+
+.dialog-title {
+  max-width: 234px;
 }
 
 .dialog-button {
@@ -451,7 +462,7 @@
 /* Mobile */
 @media (375px <= width <= 765px) {
   .header {
-    inline-size: 100%;
+    inline-size: clamp(375px, 100%, 700px);
   }
 
   .header-title-1 {
@@ -459,7 +470,7 @@
   }
 
   .main-content {
-    inline-size: 100%;
+    inline-size: clamp(375px, 100%, 700px);
   }
 
   .card-title {
