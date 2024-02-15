@@ -144,6 +144,9 @@
 }
 
 .card-title {
+  font-variation-settings:
+    "wdht" var(--wdht),
+    "wgth" var(--wght-card-title);
   font-weight: bold;
   text-align: left;
   margin-block: 3px;
@@ -365,6 +368,7 @@
   transition: box-shadow 0.3s;
   cursor: pointer;
   position: relative;
+  text-wrap: nowrap;
 }
 
 .floppy_button::after {
@@ -461,6 +465,9 @@
 
 /* Mobile */
 @media (375px <= width <= 765px) {
+  .page::-webkit-scrollbar {
+    width: 1px;
+  }
   .header {
     inline-size: clamp(375px, 100%, 700px);
   }
@@ -481,9 +488,29 @@
     right: 13px;
   }
 
+  .floppy_button {
+    margin-inline: 35px;
+    inline-size: 306px;
+    block-size: 80px;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+    padding-block: 15px;
+  }
+
+  .floppy {
+    width: 28px;
+    height: 28px;
+  }
+
   .dialog {
     inline-size: 341px;
-    block-size: 191px;
+    block-size: 195px;
+    padding-inline: 39px;
+  }
+
+  .dialog-title {
+    max-width: 198px;
   }
 
   .dialog-button {

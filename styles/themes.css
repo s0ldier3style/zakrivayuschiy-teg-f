@@ -9,6 +9,7 @@
   --wdht: 100;
   --wght: 400;
   --wght-header: 400;
+  --wght-card-title: 700;
   --main-font: "Inter-Variable", Arial, sans-serif;
   --accent-font: "PressStart2P-Regular", Arial, sans-serif;
   --main-color: #000000;
@@ -37,6 +38,7 @@
     --wdht: 100;
     --wght: 400;
     --wght-header: 400;
+    --wght-card-title: 700;
     --main-font: "Inter-Variable", Arial, sans-serif;
     --accent-font: "PressStart2P-Regular", Arial, sans-serif;
     --main-color: #000000;
@@ -65,6 +67,7 @@
   --wdht: 100;
   --wght: 465;
   --wght-header: 400;
+  --wght-card-title: 785;
   --main-font: "Inter-Variable", Arial, sans-serif;
   --accent-font: "PressStart2P-Regular", Arial, sans-serif;
   --main-color: #00cc14;
@@ -90,6 +93,7 @@
     --wdht: 100;
     --wght: 465;
     --wght-header: 400;
+    --wght-card-title: 785;
     --main-font: "Inter-Variable", Arial, sans-serif;
     --accent-font: "PressStart2P-Regular", Arial, sans-serif;
     --main-color: #00cc14;
