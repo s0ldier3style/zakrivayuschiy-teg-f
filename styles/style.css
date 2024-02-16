@@ -156,7 +156,7 @@
 
 .image-block {
   position: relative;
-  border-block: 2px solid black;
+  border-block: 2px solid var(--main-color);
 }
 
 .label {
