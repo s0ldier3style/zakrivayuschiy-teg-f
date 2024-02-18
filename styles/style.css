@@ -489,7 +489,7 @@
   }
 
   .floppy_button {
-    margin-inline: 35px;
+    margin-inline: auto;
     inline-size: 306px;
     block-size: 80px;
     display: flex;
