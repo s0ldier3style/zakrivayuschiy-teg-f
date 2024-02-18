@@ -496,6 +496,7 @@
     flex-direction: column;
     padding-inline: 20px;
     padding-block: 15px;
+    text-wrap: nowrap;
   }
 
   .floppy {
